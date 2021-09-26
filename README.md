@@ -38,9 +38,8 @@ $ yarn android
 ```
 
 ```bash
-#Custom Script
- $ yarn ou npm `fix:code ` ➜ Responsável por varrer todos os arquivos da aplicação,
- aplicando correção de indentação.
+# Responsável por varrer todos os arquivos da aplicação, aplicando correção de indentação.
+ $ yarn fix:code
 ```
 
 ## Android - Gerando APK e/ou AAB
