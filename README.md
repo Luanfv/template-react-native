@@ -1,7 +1,6 @@
 # React Native template
 
-### Introdução
-Este projeto foi criado com a intenção de criar um template para já vir configurado e pronto para uso de qualquer aplicação. Ele vem com TypeScript, duas bibliotecas muito utilizadas no React-Native e uma lista de recomendações de outras bibliotecas.
+Este projeto foi criado com a intenção de criar um template configurado e pronto para uso de qualquer aplicação. Ele vem com TypeScript, duas bibliotecas muito utilizadas no React-Native e uma lista de recomendações de outras bibliotecas.
 
 ## O que foi feito?
 - Foi resolvido o problema que ocorre quando iniciamos um novo projeto e o emulador não gera nada em tela quando abrimos o app, apenas uma tela branca. Para resolver esse problema foi preciso entrar em `android/app/src/main` e criar uma pasta chamada assets. Logo em seguida foi executando o comando abaixo na raiz do projeto.
@@ -22,19 +21,19 @@ Opcionalmente pode-se instalar o [Yarn](https://yarnpkg.com/) como gerenciador d
 
 ```bash
 # Instale as dependências
-$ npm install
-ou
 $ yarn
+ou
+$ npm install
 
 # Comece o servidor de desenvolvimento com o comando
-$ npx react-native start
-ou
 $ yarn start
+ou
+$ npx react-native start
 
 # Rode a aplicação com o comando
-$ npx react-native run-android
-ou
 $ yarn android
+ou
+$ npx react-native run-android
 ```
 
 ```bash
@@ -51,16 +50,22 @@ $ npx npm-check-updates -u
 
 ## Android - Gerando APK e/ou AAB
 
-##### 1- Crie ou adicione a chave do aplicativo na pasta ```android/app```
-##### 2- Configure as informações da sua chave no arquivo ```gradle.properties``` em ```android/gradle.properties``` 
-##### 3- Rode o comando:
+1- Crie ou adicione a chave do aplicativo na pasta ```android/app``` <br />
+2- Configure as informações da sua chave no arquivo ```gradle.properties``` em ```android/gradle.properties``` <br />
+3- Rode o comando: <br />
 ```bash
+# APK
 $ yarn apk
 ou 
+$ cd android && ./gradlew assembleRelease && cd ..
+
+# AAB
 $ yarn aab
+ou
+$ cd android && ./gradlew bundleRelease && cd ..
 ```
 
-Obs: Se você não tem experiência em gerar chaves ou controle de versão no Android, recomendo a leitura deste post [Gerando aab e apk para Android no React Native](https://www.notion.so/Gerando-aab-apk-para-android-no-React-Native-1703c2d965bc4354ade328ae146d176e)
+Obs: Se não tiver experiência em gerar chaves ou controle de versão no Android, recomendo a leitura deste post [Gerando aab e apk para Android no React Native](https://www.notion.so/Gerando-aab-apk-para-android-no-React-Native-1703c2d965bc4354ade328ae146d176e)
 
 ## Dicas de bibliotecas
 - [react-navigation](https://reactnavigation.org/) - realiza navegação dentro do app.
