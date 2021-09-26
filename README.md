@@ -69,9 +69,9 @@ Obs: Se não tiver experiência em gerar chaves ou controle de versão no Androi
 
 ## Dicas de bibliotecas
 - [react-navigation](https://reactnavigation.org/) - realiza navegação dentro do app.
-- [axios](https://github.com/axios/axios) - realiza chamas à API.
+- [axios](https://github.com/axios/axios) - realiza chamadas à API.
 - [react-query](https://react-query.tanstack.com/) - utiliza cache nas chamadas à API.
-- [react-hook-form](https://react-hook-form.com/) - controla de formularios.
-- [yup](https://github.com/jquense/yup) - valida de formularios.
+- [async-storage](https://react-native-async-storage.github.io/async-storage/docs/install/) - guarda valores no cache do celular.
+- [react-hook-form](https://react-hook-form.com/) - controla formulários.
+- [yup](https://github.com/jquense/yup) - válida formulários.
 - [react-native-modal](https://github.com/react-native-modal/react-native-modal) - cria modals.
-- [async-storage](https://react-native-async-storage.github.io/async-storage/docs/install/) - guarda valores na cache do celular.
