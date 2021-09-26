@@ -1,7 +1,7 @@
 # React Native template
 
 ### Introdução
-Este projeto foi criado com a intenção de criar um template para já vir configurado e pronto para uso de qualquer aplicação. Ele vem com TypeScript, três bibliotecas muito utilizadas no React-Native e uma lista de recomendações de outras bibliotecas.
+Este projeto foi criado com a intenção de criar um template para já vir configurado e pronto para uso de qualquer aplicação. Ele vem com TypeScript, duas bibliotecas muito utilizadas no React-Native e uma lista de recomendações de outras bibliotecas.
 
 ## O que foi feito?
 - Foi resolvido o problema que ocorre quando iniciamos um novo projeto e o emulador não gera nada em tela quando abrimos o app, apenas uma tela branca. Para resolver esse problema foi preciso entrar em `android/app/src/main` e criar uma pasta chamada assets. Logo em seguida foi executando o comando abaixo na raiz do projeto.
