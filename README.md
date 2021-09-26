@@ -39,7 +39,14 @@ $ yarn android
 
 ```bash
 # Responsável por varrer todos os arquivos da aplicação, aplicando correção de indentação.
- $ yarn fix:code
+$ yarn fix:code
+ou
+$ npx prettier --write **/*.{js,jsx,ts,tsx,json} && npx prettier --write *.{js,jsx,ts,tsx,json}
+
+# Responsável por atualizar as dependências.
+$ yarn update:package
+ou
+$ npx npm-check-updates -u
 ```
 
 ## Android - Gerando APK e/ou AAB
