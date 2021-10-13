@@ -7,8 +7,6 @@ Este projeto foi criado com a intenção de criar um template configurado e pron
 ```bash 
 $ npx react-native bundle --platform android --dev false --entry-file index.js --bundle-output android/app/src/main/assets/index.android.bundle --assets-dest android/app/src/main/res/
 ```
-- Foi configurado o eslint, prettier e editorconfig (é recomendado ter a extensão dessas três ferramentas no VSCode).
-
 - Foi instalado as bibliotecas: `styled-components` e `react-native-vector-icons`.
 
 ## Pré-requisitos
@@ -16,6 +14,18 @@ $ npx react-native bundle --platform android --dev false --entry-file index.js -
 Tenha instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Android Studio](https://developer.android.com/studio),
 opcionalmente pode-se instalar o [Yarn](https://yarnpkg.com/) como gerenciador de pacotes. Caso ainda não possua o ambiente de desenvolvimento configurado, siga o passo-a-passo para a configuração, [Ambiente React Native](https://react-native.rocketseat.dev/).
+
+## Extensões do VSCode
+
+Para o desenvolvimento desse projeto é altamente recomendado que utilize o VSCode e as extensões abaixo:
+
+- [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+- [Prettier - Code formatter](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+- [EditorConfig for VS Code](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)
+- [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
+- [GitLens (opcional)](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+- [Color Highlight (opcional)](https://marketplace.visualstudio.com/items?itemName=naumovs.color-highlight)
+
 
 ## Rodando a aplicação
 
@@ -52,7 +62,8 @@ $ npx npm-check-updates -u
 $ npx react-native-rename "NOME DO SEU APLICATIVO" -b com.EMPRESA.PRODUTO
 ```
 
-## Android - Gerando APK e/ou AAB
+## Deploy
+### Android - Gerando APK e/ou AAB
 
 - Crie ou adicione a chave do aplicativo na pasta ```android/app```
 - Configure as informações da sua chave no arquivo ```gradle.properties``` em ```android/gradle.properties```
