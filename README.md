@@ -54,9 +54,9 @@ $ npx react-native-rename "NOME DO SEU APLICATIVO" -b com.EMPRESA.PRODUTO
 
 ## Android - Gerando APK e/ou AAB
 
-1- Crie ou adicione a chave do aplicativo na pasta ```android/app``` <br />
-2- Configure as informações da sua chave no arquivo ```gradle.properties``` em ```android/gradle.properties``` <br />
-3- Rode o(s) comando(s) abaixo: <br />
+- Crie ou adicione a chave do aplicativo na pasta ```android/app```
+- Configure as informações da sua chave no arquivo ```gradle.properties``` em ```android/gradle.properties```
+- Rode o(s) comando(s) abaixo:
 ```bash
 # Gerar APK
 $ yarn apk
