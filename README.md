@@ -15,7 +15,7 @@ $ npx react-native bundle --platform android --dev false --entry-file index.js -
 
 Tenha instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Android Studio](https://developer.android.com/studio),
-Opcionalmente pode-se instalar o [Yarn](https://yarnpkg.com/) como gerenciador de pacotes.
+Opcionalmente pode-se instalar o [Yarn](https://yarnpkg.com/) como gerenciador de pacotes. Caso ainda não possua o ambiente de desenvolvimento configurado, siga o passo-a-passo para a configuração, [Ambiente React Native](https://react-native.rocketseat.dev/).
 
 ## Rodando a aplicação
 
@@ -35,6 +35,7 @@ $ yarn android
 ou
 $ npx react-native run-android
 ```
+## Códigos para auxílio
 
 ```bash
 # Responsável por varrer todos os arquivos da aplicação, aplicando correção de indentação.
@@ -46,26 +47,29 @@ $ npx prettier --write **/*.{js,jsx,ts,tsx,json} && npx prettier --write *.{js,j
 $ yarn update:package
 ou
 $ npx npm-check-updates -u
+
+# Responsável por mudar o nome do Aplicativo e Bundle Identifier
+$ npx react-native-rename "NOME DO SEU APLICATIVO" -b com.EMPRESA.PRODUTO
 ```
 
 ## Android - Gerando APK e/ou AAB
 
 1- Crie ou adicione a chave do aplicativo na pasta ```android/app``` <br />
 2- Configure as informações da sua chave no arquivo ```gradle.properties``` em ```android/gradle.properties``` <br />
-3- Rode o comando: <br />
+3- Rode o(s) comando(s) abaixo: <br />
 ```bash
-# APK
+# Gerar APK
 $ yarn apk
 ou 
 $ cd android && ./gradlew assembleRelease && cd ..
 
-# AAB
+# Gerar AAB
 $ yarn aab
 ou
 $ cd android && ./gradlew bundleRelease && cd ..
 ```
 
-Obs: Se não tiver experiência em gerar chaves ou controle de versão no Android, recomendo a leitura deste post [Gerando aab e apk para Android no React Native](https://www.notion.so/Gerando-aab-apk-para-android-no-React-Native-1703c2d965bc4354ade328ae146d176e)
+Obs: Se não tiver experiência em gerar chaves ou controle de versão no Android, siga o passo-a-passo para entender mais, [Gerando aab e apk para Android no React Native](https://www.notion.so/Gerando-aab-apk-para-android-no-React-Native-1703c2d965bc4354ade328ae146d176e).
 
 ## Dicas de bibliotecas
 - [react-navigation](https://reactnavigation.org/) - realiza navegação dentro do app.
