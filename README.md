@@ -15,7 +15,7 @@ $ npx react-native bundle --platform android --dev false --entry-file index.js -
 
 Tenha instalado em sua máquina as seguintes ferramentas:
 [Git](https://git-scm.com), [Node.js](https://nodejs.org/en/), [Android Studio](https://developer.android.com/studio),
-Opcionalmente pode-se instalar o [Yarn](https://yarnpkg.com/) como gerenciador de pacotes. Caso ainda não possua o ambiente de desenvolvimento configurado, siga o passo-a-passo para a configuração, [Ambiente React Native](https://react-native.rocketseat.dev/).
+opcionalmente pode-se instalar o [Yarn](https://yarnpkg.com/) como gerenciador de pacotes. Caso ainda não possua o ambiente de desenvolvimento configurado, siga o passo-a-passo para a configuração, [Ambiente React Native](https://react-native.rocketseat.dev/).
 
 ## Rodando a aplicação
 
